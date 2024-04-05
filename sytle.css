@@ -328,3 +328,35 @@ span{
         width: calc(100% + 8px);
     }
 }
+
+
+/* for responsiveness */
+
+@media (max-width:1000px) {
+    .home{
+        gap:9rem
+
+    }
+    
+}
+
+@media (max-width:995px) {
+    .home{
+        /* display: flex; */
+        flex-direction: column;
+        margin: 5rem 4rem;
+        /* background-color: green; */
+
+    }
+
+    .home .home-content h3 {
+        font-size:2.5rem ;
+    }
+
+    .home .home-content h3{
+        font-size: 5rem;
+    }
+
+
+    
+}
