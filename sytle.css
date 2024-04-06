@@ -206,6 +206,7 @@ span{
 }
 
 .social-icons a {
+color: var(--main-color);
  display: inline-flex;
  justify-content: center;
  align-items: center;
@@ -259,13 +260,13 @@ span{
 }
 
 .typing-text span:before{
-    content: 'Data Analyst';
+    content: '';
     color: var(--main-color);
     animation: words 20s infinite;
 }
 
 .typing-text span::after{
-    content: '';
+    content:'';
    background: var(--bg-color) ;
    position: absolute;
    width: calc(100% + 8px);
@@ -377,6 +378,7 @@ span{
 .heading{
     text-align: center;
     font-size: 4vmin;
+    margin-bottom: 4rem;
 }
 
 .services-container {
@@ -425,4 +427,44 @@ span{
     font-weight: 400;
     max-height: 100px;
     margin:auto;
+}
+
+
+/* Break point 895px  */
+
+@media (max-width: 895px) {
+    .services h2{
+        margin-bottom: 3rem;
+    }
+
+    .services-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+
+
+/* skills  */
+
+.skills{
+    background: var(--main-color);
+}
+
+.skills .container {
+    background: #e1352c54 ;
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    flex-wrap: wrap;
 }
