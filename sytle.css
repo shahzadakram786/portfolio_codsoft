@@ -464,7 +464,7 @@ color: var(--main-color);
 
 .skills .container .row {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -475,8 +475,31 @@ color: var(--main-color);
     border-radius: 1rem;
     background: #e1362c;
     background: #000;
-    box-shadow:  0  4px 10px var(--main-color);
     transition: 0.3s ease;
 
+}
 
+
+.skills .container .bar:hover {
+    box-shadow:  0  4px 10px var(--main-color);
+    cursor: pointer;
+    transform: scale(1.02);
+
+}
+
+.skills .container .bar .info{
+    padding: 0.3vmin;
+}
+
+.skills .container .bar .info span {
+    font-size: 2rem;
+    font-weight: 400;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.info #GITHUB{
+    color: #e1362c;
 }
