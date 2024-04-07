@@ -462,9 +462,9 @@ color: var(--main-color);
 }
 
 
-.skills .container .row {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.skills .container .row{
+    display: flex;
+    /* grid-template-columns: repeat(5, 1fr); */
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -476,6 +476,7 @@ color: var(--main-color);
     background: #e1362c;
     background: #000;
     transition: 0.3s ease;
+    /* flex-wrap: wrap; */
 
 }
 
@@ -502,4 +503,29 @@ color: var(--main-color);
 
 .info #GITHUB{
     color: #e1362c;
+}
+
+@media (max-width:600px) {
+    .skills .container {
+        margin: 0;
+        padding: 0;
+
+        /* grid-template-columns: repeat(3, 1fr); */
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        gap: 1rem;
+        /* padding: 2rem 0.2rem ; */
+    }
+    .skills .container{
+        width: 100%;
+        margin-top: 5px;
+        /* background-color: yellow; */
+    }
+
+    .skills .container .bar{
+        margin-top: 5px;
+    }
 }
