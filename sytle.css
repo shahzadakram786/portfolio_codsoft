@@ -371,7 +371,7 @@ color: var(--main-color);
 /* services  */
 
 
-.services {
+.services , .Projects {
     background-color: var(--second-bg-color);
 }
 
@@ -529,3 +529,57 @@ color: var(--main-color);
         margin-top: 5px;
     }
 }
+
+
+/* projects stylings */
+
+.projects{
+    background-color: var(--second-bg-color);
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.projects-box{
+    width: 100%;
+    background-color: var(--main-color);
+    height: 500px;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.projects-box:hover {
+    background: white;
+    color: var(--main-color);
+    transform: scale(1.03);
+    border: 2px solid var(--main-color);
+}
+
+.projects-box .project-info{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+
+
+}
+
+.project-info > img{
+    width: 10% ;
+}
+
+
+
+
+/* working on the about section */
+
+
+
+
+
+
+
+
