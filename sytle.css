@@ -576,10 +576,70 @@ color: var(--main-color);
 
 /* working on the about section */
 
+.About{
+background: var(--second-bg-color);
+}
+
+.about-container{
+    /* background: var(--main-color); */
+    display: flex;
+
+
+}
+
+.about-image{
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+
+.about-info{
+    width: 50%;
+    background: var(--main-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem;
+    
+}
+
+.about-headings{
+   padding-top: 5rem;
+   font-size: large;
+   /* background: red; */
+   color:var(--bg-color);
+   text-transform: capitalize;
+}
 
 
 
+.about-info .para-about {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
 
+.about-info .ul-scnd{
+    font-size: 1.5rem;
+}
 
+#download-cv {
+ margin-top: 1rem;
+ border: 2px solid var(--main-color) ;
+ padding: 1rem ;
+ font-size: 2rem;
+ border-radius: 20px;
+ width: fit-content;
+ transition: 0.3s ease;
 
+}
 
+#download-cv:hover{
+    
+        color: white;
+        transform: scale(1.1) translateY(-5px);
+        background: var(--main-color);
+        box-shadow: 0 0 25px var(--main-color);
+    
+}
