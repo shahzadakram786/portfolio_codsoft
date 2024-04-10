@@ -550,6 +550,7 @@ color: var(--main-color);
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease;
+    margin-bottom: 9rem;
 }
 
 .projects-box:hover {
@@ -563,12 +564,15 @@ color: var(--main-color);
     width: 20%;
     height: 100%;
     background-color: yellow;
+    margin-bottom: 12rem;
 
 
 }
 
 .project-info > img{
-    width: 10% ;
+    width: 100% ;
+    /* height: max-content; */
+    /* margin-bottom: 5rem; */
 }
 
 
@@ -627,9 +631,9 @@ background: var(--second-bg-color);
     font-size: 2rem;
 }
 
-.about-info .ul-scnd li span{
+.about-info  li span{
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: var(--bg-color);
 }
 
 #download-cv {
