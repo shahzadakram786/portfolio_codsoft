@@ -582,10 +582,10 @@ color: var(--main-color);
 
 }
 
-.project-info > img{
+.projects-info > img{
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border: 2px solid var(--main-color);
     /* border-radius: 20px; */
     /* height: max-content; */
