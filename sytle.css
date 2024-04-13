@@ -627,6 +627,7 @@ background: var(--second-bg-color);
 
 .about-image{
     width: 50%;
+    height: 100%;
     /* background-color: yellow; */
 }
 
@@ -644,10 +645,10 @@ background: var(--second-bg-color);
 }
 
 .about-info:hover  {
-    background: white;
-    color: var(--main-color);
-    transform: scale(1.03);
-    border: 2px solid var(--main-color);
+   
+    transform: scale(1.02);
+    box-shadow: 0  4px 10px var(--text-color);
+
 }
 
 .about-headings{
@@ -689,6 +690,22 @@ background: var(--second-bg-color);
         background: var(--main-color);
         box-shadow: 0 0 25px var(--main-color);
     
+}
+
+
+@media (max-width:995px) {
+    .About{
+        /* width: fit-content; */
+        height:auto  !important;
+    }
+
+.about-image{
+    display: none;
+ 
+}
+     .about-info{
+        width: 100%;
+     }
 }
 
 
